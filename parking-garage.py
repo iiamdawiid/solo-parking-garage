@@ -1,12 +1,10 @@
 class ParkingGarage():
 
 
-
     def __init__(self):
         self.tickets = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         self.parkingSpaces = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         self.currentTicket = {}
-
 
 
     def takeTicket(self):
@@ -16,7 +14,6 @@ class ParkingGarage():
         del self.parkingSpaces[-1]
         self.currentTicket["paid"] = False
         
-
 
     def payForParking(self):
         """Display an input that waits for an amount from the user and store it in a variable.
@@ -51,7 +48,6 @@ class ParkingGarage():
                     print("\nTicket not paid; Please pay the required amount!")
         else:
             print("Ticket has been paid!")
-
 
 
     def leaveGarage(self):
